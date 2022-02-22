@@ -1,32 +1,42 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
+      <!--
+      <router-link to="/">Dashboard</router-link>|
       <router-link to="/about">About</router-link>
+      -->
     </div>
-    <router-view/>
+    <router-view />
   </div>
 </template>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Nunito Sans;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  background: #e7ecf0;
 }
 
-#nav {
-  padding: 30px;
-}
+::-webkit-scrollbar {
+  background: #e7ecf0;
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+  width: 26px;
 }
+::-webkit-scrollbar-track {
+  background-color: #cdcfd6;
+  border-radius: 17px;
+  border: 10px solid transparent;
+  background-clip: content-box;
+  box-shadow: inset 2px 2px 2px white, inset -2px -2px 2px #cbced1;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 17px;
+  border: 10px solid transparent;
+  background-clip: content-box;
 
-#nav a.router-link-exact-active {
-  color: #42b983;
+  /* change border color to blue to match the background */
 }
 </style>
